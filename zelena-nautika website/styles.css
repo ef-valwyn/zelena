@@ -111,19 +111,3 @@ body {
 @media (max-width: 900px){
   .parallax.parallax-offset{ background-attachment: scroll; }
 }
-
-/* SVG gradient for brand mark */
-svg.brand-mark {
-  --g1:#18a4c4; --g2:#22c9d0; --g3:#56e3e1;
-}
-svg.brand-mark defs { display:none; }
-svg.brand-mark::before{ content:''; }
-svg.brand-mark .wave{ fill: url(#oceanic); }
-
-/* Injected gradient via CSS paint */
-svg.brand-mark {
-  position: relative;
-}
-svg.brand-mark::after{
-  content:'';
-}
